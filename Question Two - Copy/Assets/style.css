@@ -1,0 +1,64 @@
+/*
+    Shaiyur Dooken - 151757
+    Web Technology 512
+    Question Two - CSS File
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3d3434;
+    color: white;
+
+    font-family: monospace;
+    font-size: 26px;
+}
+
+p {
+    margin: 20px;
+}
+
+p span {
+    color: #f00;
+}
+
+p.explanation {
+    font-size: 17px;
+}
+
+p#intro {
+    font-size: 36px;
+    color: #f00;
+}
+
+input[type = "text"] {
+    padding: 10px;
+    margin: 20px;
+    width: 600px;
+    height: 130px;
+    display: block;
+    text-align: center;
+}
+
+button {
+    padding: 6px;
+    margin: 20px;
+    display: block;
+    width: 200px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f0fff0;
+    color: #f00;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.clr {
+    clear: both;
+}

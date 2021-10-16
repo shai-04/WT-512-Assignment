@@ -1,0 +1,60 @@
+<!--
+    Shaiyur Dooken - 151757
+    Web Technology 512
+    Question Two - HTML File
+-->
+
+<!DOCTYPE html>
+
+<html lang = "en-za">
+    <head>
+        <meta charset = "UTF-8">
+
+        <title>Golf Scores:</title>
+
+        <link rel = "stylesheet" type = "text/CSS" href = "Assets/style.css">
+    </head>
+
+    <body>
+        <p id = "intro">
+            Hi there!
+        </p>
+
+        <p>
+            Chances are that you've already entered a few scores. Here's an explanation as 
+            to what the buttons below do.
+        </p>
+
+        <p class = "explanation">
+            <span>Display Scores: </span>Does exactly what you think it does, it displays the 
+            scores you've entered.
+        </p>
+
+        <p class = "explanation">
+            <span>Display Average Score: </span>Calculates the average of the scores you've entered and displays it.
+        </p>
+
+        <p class = "explanation">
+            <span>Reset Scores: </span>Deletes all the scores you've entered and allows you to start the 
+            process all over again.
+        </p>
+
+        <div style = "float: left;">
+            <input type = "text" id = "txtOutput" placeholder = "We'll display something here when you click the 'Display' button">
+        </div>
+        <div style = "float: right;">
+            <button onclick = "g.displayScores()">Display Scores</button>
+
+            <button onclick = "g.calculateAverage()">Display Average Score</button>
+
+            <button onclick = "g.reset()">Reset Scores</button>
+        </div>
+
+        <div class = "clr"></div>
+
+        <footer>Created by Shaiyur Dooken - 151757 &copy; 2020</footer>
+    </body>
+
+    <script type = "text/javascript" src = "Assets/script.js">
+    </script>
+</html>

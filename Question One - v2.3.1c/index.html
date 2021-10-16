@@ -1,0 +1,130 @@
+<!--Shaiyur Dooken - 151757
+    Web Technology 512
+    Question One - HTML File
+
+    // Attributions:
+        1) Cyberpunk Moonlight Sonata by 'Joth' from https://www.opengameart.com
+        2) Move and GameOver sfx from http://www.orangefreesounds.com/
+        3) Win sfx from Windows 3.1 Bootup sound
+-->
+
+<!DOCTYPE html>
+
+<html lang = "en-za">
+    <head>
+        <meta charset = "UTF-8">
+
+        <title>TIC-TAC-TOE | v2.3.1c</title>
+
+        <link rel = "stylesheet" type = "text/CSS" href = "Assets/style.css">
+    </head>
+
+    <body>
+        <p class = "intro">Hi there!</p>
+
+        <p class = "explanation">
+            Welcome to <span>TIC TAC TOE</span>, the most infamous way to kill time! Not sure how to play? 
+            Don't worry, we've got your back. Scroll down for some tips and tricks.
+        </p>
+
+        <!--Used to set up the board, divided into rows and cells for ease of access-->
+        <div id = "board">
+            <div class = "row">
+                <p id = "pos00" class="cell" onclick = "g.updateBoard(0,0)"></p>
+                <p id = "pos01" class="cell" onclick = "g.updateBoard(0,1)"></p>
+                <p id = "pos02" class="cell" onclick = "g.updateBoard(0,2)"></p>
+            </div>
+    
+            <div class = "row">
+                <p id = "pos10" class="cell" onclick = "g.updateBoard(1,0)"></p>
+                <p id = "pos11" class="cell" onclick = "g.updateBoard(1,1)"></p>
+                <p id = "pos12" class="cell" onclick = "g.updateBoard(1,2)"></p>
+            </div>
+    
+            <div class = "row">
+                <p id = "pos20" class="cell" onclick = "g.updateBoard(2,0)"></p>
+                <p id = "pos21" class="cell" onclick = "g.updateBoard(2,1)"></p>
+                <p id = "pos22" class="cell" onclick = "g.updateBoard(2,2)"></p>
+            </div>
+        </div>
+
+        <!--Used to setup buttons and status for player to reset and view what happened-->
+        <div id = "boardbuttons">
+            <div class = "button" onclick = "g.reset()">Reset</div>
+            <div class = "button" onclick = "g.toggleMusic()">Toggle Music</div>
+            <div class = "button" onclick = "g.toggleSFX()">Toggle SFX</div>
+            <a href = "#help">Help</a>
+
+            <p class = "explanation" id = "status"><span>Status</span>: Ready to play</p>
+        </div>
+
+        <div class = "clr"></div>
+
+        <!--Help section for player-->
+        <p class = "intro" id = "help">Help:</p>
+
+        <p class="explanation">
+            <span>1</span> Notice the <span>3x3 grid</span> above? That's where the game takes place. It's 
+            basically made up of <span>3 rows</span> and <span>columns</span>.
+        </p>
+
+        <p class = "explanation">
+            <span>2</span> Once you've wrapped your head around that, choose whether you play 
+            as <span>X</span> and your friend as <span>O</span> or vice versa.
+        </p>
+
+        <p class = "explanation">
+            <span>3</span> With that out of the way, you and your friend must now take turns placing 
+            your respective symbols on the board (by <span>clicking</span> each square).
+        </p>
+
+        <p class = "explanation">
+            <span>4</span> First player to get <span>3 of their symbols</span> next to each other (either 
+            <span>horizontally</span>, <span>vertically</span> or <span>diagonally</span>) wins the match.
+        </p>
+
+        <p class = "explanation">
+            <span>5</span> Becareful though, if all <span>9 squares</span> are <span>occupied</span> and none of 
+            the players have managed to place <span>3 symbols</span> next to each other, the match is called a draw 
+            and you'll have to start again!
+        </p>
+
+        <p class = "explanation">
+            <span>6</span> If you don't want <span>music</span> or <span>sfx</span> to be played, click the <span>toggle music</span> or 
+            <span>toggle sfx</span> buttons to toggle the music and sfx respectively. Alternatively, press <span>ctrl + m</span> 
+            to mute all sounds within the browser. Should this not work, try looking for a <span>speaker icon</span> near the 
+            <span>tab manager</span> and hover over it for more instructions. However, if your browser doesn't support audio, 
+            there will be text indicating this below.
+        </p>
+
+        <!--Sets up audio to be used in game-->
+        <audio id = "bgMusic">
+            <source src = "Assets/Sound/Cyberpunk Moonlight Sonata.mp3" type = "audio/mp3">
+            The background music will not play. Please update your browser to enhance your 
+            experience.
+        </audio>
+
+        <audio id = "gameOver">
+            <source src = "Assets/Sound/gameover.mp3" type = "audio/mp3">
+            Game Over sound effect will not play. Please update your browser to enhance your 
+            experience.
+        </audio>
+
+        <audio id = "move">
+            <source src = "Assets/Sound/move.mp3" type = "audio/mp3">
+            Move sound effect will not play. Please update your browser to enhance your 
+            experience.
+        </audio>
+
+        <audio id = "win">
+            <source src = "Assets/Sound/win.mp3" type = "audio/mp3">
+            Win sfx will not play. Please update your browser to enhance your 
+            experience.
+        </audio>
+
+        <footer>Created by Shaiyur Dooken &copy; All rights reserved</footer>
+    </body>
+
+    <script type = "text/javascript" src = "Assets/script.js">
+    </script>
+</html>

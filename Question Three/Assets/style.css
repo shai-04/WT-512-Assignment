@@ -1,0 +1,59 @@
+/*
+    Shaiyur Dooken - 151757
+    Web Technlogy 512
+    Question Three - CSS File
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3d3434;
+    color: white;
+
+    font-family: monospace;
+    font-size: 26px;
+}
+
+p {
+    margin: 20px;
+}
+
+p#intro {
+    color: #f00;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+p.explanation {
+    font-size: 20px;
+}
+
+p span {
+    color: #f00;
+}
+
+div.button {
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #f00;
+    transition: background-color .5s;
+    border-radius: 5px;
+}
+
+div.button:hover {
+    background-color: #f00;
+}
+
+footer {
+    text-align: center;
+    background-color: #f0fff0;
+    color: red;
+    font-size: 16px;
+    padding: 5px;
+}
